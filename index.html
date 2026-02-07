@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Election: Run For President - Learn the Electoral College</title>
     <meta name="description" content="An educational board game-style video game about the Electoral College and United States Presidential elections.">
-    <link rel="icon" type="image/png" href="images/Icon.png">
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
     <style>
         * {
             margin: 0;
@@ -18,7 +20,7 @@
             line-height: 1.6;
             color: #333;
             background-color: #0b1020;
-            background-image: linear-gradient(135deg, rgb(189, 31, 36) 0%, rgb(56, 82, 163) 100%), url('images/EmptyMenuBackground.png');
+            background-image: url('images/EmptyMenuBackground.jpg'),linear-gradient(135deg, rgb(189, 31, 36) 0%, #e0fee4 50%, rgb(56, 82, 163) 100%);
             background-position: center center;
             background-size: cover;
             background-attachment: fixed;
@@ -86,7 +88,7 @@
         .game-description h2 {
             font-size: 2rem;
             color: rgb(189, 31, 36);
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         .game-description p {
@@ -94,6 +96,99 @@
             color: #555;
             max-width: 800px;
             margin: 0 auto 20px;
+            line-height: 1.7;
+        }
+
+        .hero-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgb(189, 31, 36);
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 900px;
+        }
+
+        .subhero-text {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: rgb(56, 82, 163);
+            margin-bottom: 30px;
+        }
+
+        .description-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .highlight-text {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: rgb(189, 31, 36);
+            background: linear-gradient(135deg, rgba(189, 31, 36, 0.1) 0%, rgba(56, 82, 163, 0.1) 100%);
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+
+        .game-description h3 {
+            font-size: 1.6rem;
+            color: rgb(56, 82, 163);
+            margin: 50px 0 25px;
+            font-weight: 600;
+        }
+
+        .game-description ul {
+            list-style: none;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: left;
+        }
+
+        .game-description ul li {
+            font-size: 1.1rem;
+            color: #555;
+            padding: 12px 0 12px 40px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .game-description ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: rgb(189, 31, 36);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .review-quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #444;
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 20px 40px;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .review-quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: rgba(189, 31, 36, 0.2);
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-family: Georgia, serif;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgb(56, 82, 163);
+            margin-top: 40px;
         }
 
         .download-section {
@@ -193,6 +288,45 @@
                 font-size: 1.5rem;
             }
 
+            .hero-text {
+                font-size: 1.2rem;
+            }
+
+            .subhero-text {
+                font-size: 1.1rem;
+            }
+
+            .description-text {
+                font-size: 1rem;
+            }
+
+            .highlight-text {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+
+            .game-description h3 {
+                font-size: 1.3rem;
+            }
+
+            .game-description ul li {
+                font-size: 1rem;
+                padding-left: 35px;
+            }
+
+            .review-quote {
+                font-size: 1.05rem;
+                padding: 15px 30px;
+            }
+
+            .review-quote::before {
+                font-size: 3rem;
+            }
+
+            .cta-text {
+                font-size: 1.05rem;
+            }
+
             .store-buttons {
                 flex-direction: column;
                 align-items: center;
@@ -214,11 +348,34 @@
         <main>
             <section class="game-description">
                 <h2>About the Game</h2>
-                <p>
-                    <strong>Election: Run For President</strong> is an engaging educational game that teaches players about the United States Electoral College system through strategic gameplay.
+                <p class="hero-text">
+                    The best presidential election simulation, geared towards fun 1 or 2 player games that will have you at the edge of your seat when the votes come in on Election Day!
                 </p>
-                <p>
-                    Navigate the complex landscape of American presidential elections as you campaign across states, manage resources, and make strategic decisions to win the Electoral College. Learn how presidential campaigns work while having fun!
+                <p class="subhero-text">
+                    Do you have what it takes to become President of the United States?
+                </p>
+                <p class="description-text">
+                    Run for President is a fun, fast-paced election simulator that blends strategy, civics, and gameplay into an experience kids and adults can enjoy together. Play head-to-head like a board game using a single iPad/iPhone, or use it as an engaging classroom learning tool.
+                </p>
+                <p class="highlight-text">
+                    NO IN APP PURCHASES EVER! You get the entire game - enjoy!
+                </p>
+                <h3>Multiple Ways to Play</h3>
+                <ul>
+                    <li>Simulation Mode: Replay real election matchups and test your campaign strategy</li>
+                    <li>Fantasy Mode: Unlock all scenarios and create dream matchups across eras</li>
+                    <li>2-Player Board Game Style: One iPad supports head-to-head play</li>
+                    <li>Built for Learning + Fun</li>
+                </ul>
+                <h3>What Reviewers Say</h3>
+                <p class="review-quote">
+                    “Fun whether or not you’re interested in politics — quick and replayable.”
+                </p>
+                <p class="review-quote">
+                    “This game lays the groundwork to understand elections from the candidate’s perspective.”
+                </p>
+                <p class="cta-text">
+                    Download now and start your campaign. Every decision counts on the road to the White House.
                 </p>
             </section>
 
@@ -235,13 +392,13 @@
                         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                         </svg>
-                        Google Play
+                        Google Play (Coming Soon)
                     </a>
                     <a href="#" class="store-button steam">
                         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C7.4,22 3.55,18.92 2.36,14.73L6.19,16.31C6.45,17.6 7.6,18.58 8.97,18.58C10.53,18.58 11.8,17.31 11.8,15.75V15.62L15.2,13.19H15.28C17.36,13.19 19.05,11.5 19.05,9.42C19.05,7.34 17.36,5.65 15.28,5.65C13.2,5.65 11.5,7.34 11.5,9.42V9.47L9.13,12.93L8.97,12.92C8.38,12.92 7.83,13.1 7.38,13.41L2,11.2C2.43,6.05 6.73,2 12,2M8.28,17.17C9.08,17.5 10,17.13 10.33,16.33C10.66,15.53 10.28,14.62 9.5,14.28L8.22,13.76C8.71,13.58 9.26,13.57 9.78,13.79C10.31,14 10.72,14.41 10.93,14.94C11.15,15.46 11.15,16.04 10.93,16.56C10.5,17.64 9.23,18.16 8.15,17.71C7.65,17.5 7.27,17.12 7.06,16.67L8.28,17.17M15.28,11.53C13.87,11.53 12.71,10.38 12.71,8.97C12.71,7.56 13.87,6.41 15.28,6.41C16.69,6.41 17.85,7.56 17.85,8.97C17.85,10.38 16.69,11.53 15.28,11.53M13.05,8.97C13.05,10.2 14.05,11.19 15.28,11.19C16.5,11.19 17.5,10.2 17.5,8.97C17.5,7.75 16.5,6.75 15.28,6.75C14.05,6.75 13.05,7.75 13.05,8.97Z"/>
                         </svg>
-                        Steam
+                        Steam (Coming Soon)
                     </a>
                 </div>
             </section>
