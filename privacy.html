@@ -16,8 +16,24 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #0b1020;
+            background-image: linear-gradient(135deg, rgb(189, 31, 36) 0%, rgb(56, 82, 163) 100%), url('images/EmptyMenuBackground.png');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
             min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
         }
 
         .container {
@@ -61,14 +77,14 @@
         }
 
         h2 {
-            color: #667eea;
+            color: rgb(189, 31, 36);
             margin-top: 30px;
             margin-bottom: 15px;
             font-size: 1.5rem;
         }
 
         h3 {
-            color: #764ba2;
+            color: rgb(56, 82, 163);
             margin-top: 20px;
             margin-bottom: 10px;
             font-size: 1.2rem;
@@ -143,15 +159,10 @@
 
             <h2>Introduction</h2>
             <p>
-                Welcome to Election: Run For President. We are committed to protecting your privacy and ensuring you have a positive experience while using our game. This Privacy Policy explains how we handle information when you use our game.
+                Welcome to Election: Run For President. We are committed to protecting your privacy and ensuring you have a positive experience while using our game. This Privacy Policy explains how we do not collect, use, or share data when you use our game and our website at electionrunforpresident.com.
             </p>
 
-            <h2>Information We Collect</h2>
-            <p>
-                Election: Run For President is designed with your privacy in mind. We do not collect, store, or transmit any personal information from our users.
-            </p>
-
-            <h3>Data We Do NOT Collect:</h3>
+            <h3>We Do NOT Collect or Share anything, including:</h3>
             <ul>
                 <li>Personal identification information (name, email address, phone number, etc.)</li>
                 <li>Location data</li>
@@ -163,12 +174,12 @@
 
             <h2>Game Data Storage</h2>
             <p>
-                Any game progress or settings are stored locally on your device only. This data never leaves your device and is not accessible to us or any third parties.
+                Any game achievements are stored locally on your device only. This data never leaves your device and is not shared with us or any third parties.
             </p>
 
             <h2>Third-Party Services</h2>
             <p>
-                Our game does not integrate with any third-party analytics, advertising, or tracking services. We do not share any information with third parties because we do not collect any information.
+                Our game does not integrate with any third-party analytics, advertising, or tracking services. We do not collect or share any information with third parties.
             </p>
 
             <h2>Children's Privacy</h2>
@@ -178,13 +189,8 @@
 
             <h2>In-App Purchases</h2>
             <p>
-                If our game includes in-app purchases, these transactions are processed entirely through the App Store (iOS), Google Play Store (Android), or Steam platform. We do not have access to your payment information. Please refer to your platform's privacy policy for information about how they handle payment data:
+                We are proud to have no in-app purchases. You can enjoy the full game without any additional transactions.
             </p>
-            <ul>
-                <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
-                <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-                <li><a href="https://store.steampowered.com/privacy_agreement/" target="_blank">Steam Privacy Policy</a></li>
-            </ul>
 
             <h2>Data Security</h2>
             <p>

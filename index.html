@@ -17,8 +17,24 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #0b1020;
+            background-image: linear-gradient(135deg, rgb(189, 31, 36) 0%, rgb(56, 82, 163) 100%), url('images/EmptyMenuBackground.png');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
             min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
         }
 
         .container {
@@ -64,12 +80,12 @@
 
         .game-description {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
 
         .game-description h2 {
             font-size: 2rem;
-            color: #667eea;
+            color: rgb(189, 31, 36);
             margin-bottom: 20px;
         }
 
@@ -80,21 +96,6 @@
             margin: 0 auto 20px;
         }
 
-        .screenshots {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-
-        .screenshot {
-            max-width: 300px;
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
         .download-section {
             text-align: center;
             margin-top: 60px;
@@ -102,7 +103,7 @@
 
         .download-section h2 {
             font-size: 2rem;
-            color: #667eea;
+            color: rgb(189, 31, 36);
             margin-bottom: 40px;
         }
 
@@ -118,7 +119,7 @@
             align-items: center;
             justify-content: center;
             padding: 15px 30px;
-            background: #333;
+            background: #111;
             color: white;
             text-decoration: none;
             border-radius: 10px;
@@ -135,12 +136,12 @@
         }
 
         .store-button.apple {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, rgb(189, 31, 36) 0%, rgb(56, 82, 163) 100%);
         }
 
         .store-button.google {
-            background: #48ff91;
-            color: #333;
+            background: rgb(56, 82, 163);
+            color: white;
         }
 
         .store-button.steam {
@@ -208,8 +209,6 @@
     <div class="container">
         <header>
             <img src="images/mainMenu_title.png" alt="Election: Run For President" class="logo">
-            <p class="tagline">Master the Electoral College</p>
-            <p class="subtitle">An educational board game-style strategy game</p>
         </header>
 
         <main>
@@ -221,11 +220,6 @@
                 <p>
                     Navigate the complex landscape of American presidential elections as you campaign across states, manage resources, and make strategic decisions to win the Electoral College. Learn how presidential campaigns work while having fun!
                 </p>
-            </section>
-
-            <section class="screenshots">
-                <img src="images/PlaceholderScenario.png" alt="Game Screenshot" class="screenshot">
-                <img src="images/EmptyMenuBackground.png" alt="Game Menu" class="screenshot">
             </section>
 
             <section class="download-section">
