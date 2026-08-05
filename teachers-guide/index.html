@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Guide - Election: Run For President</title>
+    <meta name="description" content="Classroom companion guide for Election: Run For President — teach the Electoral College through activities, discussion prompts, and research assignments.">
+    <meta property="og:title" content="Teacher's Guide - Election: Run For President">
+    <meta property="og:description" content="Classroom companion guide for teaching the Electoral College with Election: Run For President.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://electionrunforpresident.com/teachers-guide/">
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #0b1020;
+            background-image: url('../images/EmptyMenuBackground.jpg'), linear-gradient(135deg, rgb(189, 31, 36) 0%, #e0fee4 50%, rgb(56, 82, 163) 100%);
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        main {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: rgb(189, 31, 36);
+            margin-top: 36px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: rgb(56, 82, 163);
+            margin-top: 24px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        main a {
+            color: rgb(56, 82, 163);
+            font-weight: 600;
+        }
+
+        main a:hover {
+            text-decoration: underline;
+        }
+
+        .download-box {
+            text-align: center;
+            margin: 0 0 32px;
+            padding: 28px 24px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(189, 31, 36, 0.1) 0%, rgba(56, 82, 163, 0.1) 100%);
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 8px;
+            background: rgb(56, 82, 163);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .download-button:hover {
+            background: rgb(45, 68, 140);
+            text-decoration: none;
+        }
+
+        .download-note {
+            margin-top: 12px;
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            color: #777;
+        }
+
+        .footnote {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        .example-box {
+            padding: 16px 20px;
+            border-radius: 8px;
+            background: #f7f8fb;
+            margin-bottom: 15px;
+        }
+
+        .example-box p {
+            margin-bottom: 8px;
+        }
+
+        .example-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        dl {
+            margin-bottom: 15px;
+        }
+
+        dt {
+            font-weight: 600;
+            color: #333;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+
+        dd {
+            margin-left: 0;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        footer p {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            main {
+                padding: 40px 20px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-link">&larr; Back to Home</a>
+            <h1>Teacher's Guide</h1>
+        </header>
+
+        <main>
+            <div class="download-box">
+                <a href="teachers-guide.pdf" class="download-button" download>Download PDF</a>
+                <p class="download-note">Print or share the full guide as a PDF.</p>
+            </div>
+
+            <h2>Purpose</h2>
+            <p>
+                This teacher's guide is intended as a companion in classrooms to the educational game <strong>Election: Run For President</strong>, presented as a fun and dynamic way for students to experience firsthand how the <strong>Electoral College</strong> system works in electing the president of the United States.
+            </p>
+
+            <h2>Key Concepts</h2>
+            <ul>
+                <li>What is the electoral college?</li>
+                <li>Why doesn't the candidate with the most votes (popular vote) win the election?</li>
+                <li>What is the difference between an indirect election and a direct election?</li>
+                <li>How do electoral votes change the way candidates run for president?</li>
+                <li>Why is California worth so many more electoral votes (55) than Minnesota (10)? Is one state more important to the election in some way?</li>
+                <li>How many electoral votes does it take to win the election?</li>
+            </ul>
+
+            <h2>Overview</h2>
+            <p>
+                The president of the United States of America is elected every four years based on the voting of the registered citizens of the country. But it comes as a surprise to some that it is not always the candidate who gets the most votes who becomes president.<sup>1</sup>
+            </p>
+            <p>
+                The president is elected using an indirect election method where each state individually casts their electoral votes based on the votes of the people in their state. With the exceptions of Maine and Nebraska,<sup>2</sup> all states cast their electoral votes on a winner-take-all basis which means that the candidate that gets the most votes gets all of that state's electoral votes.
+            </p>
+            <p class="footnote">
+                <sup>1</sup> During the 2000 election, Al Gore actually received more votes than George W. Bush. Gore eventually lost the election because Bush carried the majority of the electoral votes. The same happened in the elections of 1876 and 1888.
+            </p>
+            <p class="footnote">
+                <sup>2</sup> Maine and Nebraska use the Congressional District Method which allows them to award their electoral votes to multiple candidates based on who gets the most votes in each congressional district. The candidate with the majority in the popular vote gets the 2 remaining electoral votes.
+            </p>
+            <p>
+                Since 1964, there have been a total of 538 electoral votes between all 50 states (as well as the District of Columbia<sup>3</sup>). The candidate who claims the majority of these electoral votes (270 or more) becomes the next president.
+            </p>
+            <p class="footnote">
+                <sup>3</sup> The District of Columbia, although not a state, was granted 3 electoral votes by the 23rd constitutional amendment (ratified in 1961).
+            </p>
+
+            <h2>Conversation Starters</h2>
+            <ul>
+                <li>Why is California worth 55 electoral votes while Wyoming is worth just 3?<sup>4</sup></li>
+                <li>If you were running for president, would you pay more attention to the states with lots of electoral votes? Why?</li>
+                <li>Do you think it is right that the candidate that wins the popular vote can lose the election based on his/her opponent getting the majority of electoral votes?</li>
+                <li>Why do you think so many modern elections seem to swing based on who wins states like Ohio, Florida and Pennsylvania? What do you think makes those states special over the last few elections?<sup>5</sup></li>
+                <li>Does our electoral college system encourage or discourage voter turnout? Is the answer different depending on whether a state is a tossup state rather than heavily favoring one candidate or the other?</li>
+            </ul>
+            <p class="footnote">
+                <sup>4</sup> The states are assigned as many electoral votes as it has Representatives and Senators in the U.S. Congress. As a result, the states with the highest populations (California, Texas, New York) have the most electoral votes while the states with the lowest populations (Alaska, Delaware, Montana) have the least electoral votes.
+            </p>
+            <p class="footnote">
+                <sup>5</sup> Since states award electoral votes on a winner-takes-all basis, candidates tend to focus their time and resources on the states with no clear cut winner. In modern elections, California has been a stronghold for democrats while Texas has been strongly favoring the republican candidate. As a result, comparatively little campaigning has been done in those states while toss up states like Florida, Ohio and Pennsylvania receive a disproportionate amount of attention from the candidates.
+            </p>
+
+            <h2>Classroom Activity: Make Your Own Electoral College</h2>
+            <p>
+                In this activity you will hold your own presidential election using the indirect election method. Each classroom will be given electoral votes based on the amount of students in their class (more students = more electoral votes). Similar to the United States elections, the classes with more students will have more impact on the final outcome of the election.
+            </p>
+            <ol>
+                <li>
+                    <strong>Decide what the election will be about.</strong> Student council president? Or, to keep things fun, what about a school wide decision between two party options? Pizza party vs. Ice Cream party. The key here is to select just two things to run against each other, preferably that the students in your school will have a strong opinion about.
+                </li>
+                <li>
+                    <strong>Take a census of your school</strong> (which means that you need to find out how many students are in each class). Each class is like a state in this election (they can each choose a real state to be if you'd like) and their population will determine the amount of electoral votes they receive.
+                </li>
+                <li>
+                    <strong>Assign electoral votes to each classroom/state.</strong> Electoral votes should be representative of the size of the class, but not literally equal to the number of students in each class. We suggest dividing the number of students in each class by 3 (round off if you get a fraction). This way you have fewer electoral votes than actual students (mirroring the US election system).
+                    <div class="example-box">
+                        <p><strong>Example:</strong> Classroom 1 has 21 students. Classroom 2 has 16 students. Classroom 3 has 12 students. Divide by 3 which gives you totals:</p>
+                        <p>Classroom 1 — 21 / 3 = 7 electoral votes</p>
+                        <p>Classroom 2 — 16 / 3 = 5⅓ (round off to 5) = 5 electoral votes</p>
+                        <p>Classroom 3 — 12 / 3 = 4 electoral votes</p>
+                    </div>
+                </li>
+                <li>
+                    <strong>Campaign.</strong> Have candidates or groups of students advocate for their favorite side of the issue. Do students focus more time/energy on the bigger classes? You can have lots of fun with this part of the process. Debates over the benefits of pizza vs. ice cream? Allow students to make campaign ads? Digital media campaign? Posters?
+                </li>
+                <li>
+                    <strong>Polling.</strong> Appoint a group of students to do a poll of a small portion of the student body. How is pizza polling? Is it trending stronger in the younger grades?
+                </li>
+                <li>
+                    <strong>General Election.</strong> The big day arrives. Allow each class to vote and tally their own results. Each class will then award all of their electoral votes based on what the majority of their classroom voted for.
+                </li>
+                <li>
+                    <strong>Tally Results.</strong> Tally the electoral vote results and announce a winner!
+                </li>
+            </ol>
+
+            <h2>Research It (Take Home Assignments)</h2>
+            <ol>
+                <li>
+                    <strong>2000 Election:</strong> Research the 2000 presidential election and do a report (in writing or classroom presentation) about what was unique about that election from an electoral standpoint. It was the only election in United States history to be effectively decided by the U.S. Supreme Court.
+                </li>
+                <li>
+                    <strong>Different Elections, Different Strategies:</strong> Assign different election years to every student and ask them to research and report on the varied dynamics of each election cycle. Why was Ronald Reagan's win in 1980 the most lopsided in history? What impact did Green Party candidate Ralph Nader have on the 2000 election? When students see and hear the differences of the various election cycles one after another they may begin to draw larger connections in general election strategies based on the electoral college.
+                </li>
+                <li>
+                    <strong>Watch Cable News, The Daily Show, TV Debates:</strong> Watch a variety of coverage of the current political campaigns and note the campaign strategies being used by the candidates. Are they focusing on particular states? Why? Are certain topics and issues being brought by the candidates because they are influential in states whose electoral votes may be up for grabs?
+                </li>
+            </ol>
+
+            <h2>Vocabulary</h2>
+            <p><em>Source: dictionary.com and wikipedia.com</em></p>
+            <dl>
+                <dt>Campaign</dt>
+                <dd>The competition by rival political candidates and organizations for public office.</dd>
+
+                <dt>Census</dt>
+                <dd>An official enumeration of the population, with details as to age, sex, occupation, etc.</dd>
+
+                <dt>Congressional District Method</dt>
+                <dd>Under the Congressional District Method, the electoral votes are distributed based on the popular vote winner within each of the state's congressional districts; the statewide popular vote winner receives two additional electoral votes. Nebraska and Maine currently use this method.</dd>
+
+                <dt>Direct Election</dt>
+                <dd>A term describing a system of choosing political officeholders in which the voters directly cast ballots for the person, persons or political party that they desire to see elected. The method by which the winner or winners of a direct election are chosen depends upon the electoral system used. The most commonly used systems are the plurality system and the two round system for single winner elections, such as a presidential election, and party-list proportional representation for the election of a legislature.</dd>
+
+                <dt>Electoral College</dt>
+                <dd>A body of electors chosen by the voters in each state to elect the President and vice President of the U.S.</dd>
+
+                <dt>Electoral Votes</dt>
+                <dd>The voters of each state, and the District of Columbia, vote for electors to be the authorized constitutional participants in a presidential election. In early U.S. history, some state laws delegated the choice of electors to the state legislature. Electors are free to vote for anyone eligible to be President, but in practice pledge to vote for specific candidates and voters cast ballots for favored presidential and vice presidential candidates by voting for correspondingly pledged electors.</dd>
+
+                <dt>Indirect Election</dt>
+                <dd>A process in which voters in an election do not actually choose between candidates for an office but rather elect persons who will then make the choice. It is one of the oldest form of elections and is still used today for many upper houses and presidents. This process is also used in many union elections and sometimes in professional, civic, and fraternal organizations.</dd>
+            </dl>
+
+            <h2>Resources</h2>
+            <h3>Books</h3>
+            <ul>
+                <li>Bennett, R. — <em>Taming the Electoral College</em></li>
+                <li>Edwards III, George C. — <em>Why the Electoral College is Bad for America</em></li>
+                <li>Hardaway, Robert M. — <em>The Electoral College and the Constitution: The Case for Preserving Federalism</em></li>
+                <li>Kuroda, Tadahisa — <em>The Origins of the 12th Amendment: The Electoral College in the Early Republic, 1787-1804</em></li>
+                <li>Shaw, Daron R. — <em>The Race to 270: The Electoral College and the Campaign Strategies of 2000 and 2004</em></li>
+                <li>Toobin, Jeffry — <em>Too Close to Call: The Thirty-Six-Day Battle to Decide the 2000 Election</em></li>
+            </ul>
+            <h3>Web Sites</h3>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Electoral_College_(United_States)" target="_blank" rel="noopener noreferrer">Wikipedia — Electoral College (United States)</a></li>
+                <li><a href="https://electionrunforpresident.com/">electionrunforpresident.com</a></li>
+                <li><a href="https://www.scholastic.com/teachers/articles/teaching-content/electoral-college/" target="_blank" rel="noopener noreferrer">Scholastic — The Electoral College</a></li>
+            </ul>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 <a href="https://www.digomind.com/" target="_blank" rel="noopener noreferrer">Digomind Productions</a>. All rights reserved.</p>
+            <p>
+                <a href="../index.html">Home</a>
+                ·
+                <a href="../privacy.html">Privacy Policy</a>
+                ·
+                <a href="../support.html">Support</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
